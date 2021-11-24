@@ -1,32 +1,55 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div
+    id="app"
+    class="app"
+    :class="{'is-folded': isFolded, 'is-expand': isExpanded}"
+  >
+    <div class="layout">
+      <HeaderArea />
+      <NavArea />
+      <div class="page-container">
+        <router-view
+          :class="`${$route.name} content`"
+          class="main-content"
+        />
+      </div>
     </div>
-    <router-view />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import "@/assets/css/common.css"
+// import "@/assets/css/layout.css"
+// import "@/assets/css/color.css"
+// import "@/assets/css/button.css"
+// import "@/assets/css/text.css"
+// import "@/assets/css/card.css"
+// import "@/assets/css/utilities.css"
+// import "@/assets/css/element-ui.css"
+// import "@/assets/css/sweet-alert.css"
 
-#nav {
-  padding: 31px;
-}
+import HeaderArea from "@/components/common/HeaderArea"
+import NavArea from "@/components/common/NavArea"
+import { mapGetters } from "vuex"
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  components: {
+    HeaderArea,
+    NavArea,
+  },
+  data(){
+    return {}
+  },
+  computed: {
+    ...mapGetters("user", ["user", ["user"]]),
+    ...mapGetters('header', ['isFolded']),
+    ...mapGetters('header',['isExpanded']),
+  },
+  created(){},
+  beforeCreate(){},
+  mounted(){},
+  methods: {},
 }
+</script>
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style></style>

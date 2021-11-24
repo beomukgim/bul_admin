@@ -1,0 +1,7 @@
+.header .logo>a {
+    text-align: left;
+}
+
+.is-folded .header .logo span {
+    display: none;
+}
