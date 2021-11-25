@@ -32,7 +32,7 @@ const routes = [
     meta: {
 
     },
-    component: () => import('@/views/pages-pc/main'),
+    component: () => import('@/views/pages-pc/clubdeal/wait-approve'),
   },
   // 모집 중 (클럽딜)
   {

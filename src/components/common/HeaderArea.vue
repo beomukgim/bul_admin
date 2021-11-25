@@ -10,7 +10,7 @@
           alt="Logo"
         >
         <span class="badge badge-pill badge-blue font-size-12">
-          <span class="font-weight-semibold m-l-5">Admin</span>
+          <span class="font-weight-semibold m-l-5">{{ user.role }}</span>
         </span>
         <img
           class="logo-fold"
@@ -137,7 +137,7 @@
           >
             <div class="avatar avatar-image  m-h-10 m-r-15">
               <img
-                src="assets/images/avatars/thumb-3.jpg"
+                :src="user.picture"
                 alt=""
               >
             </div>
@@ -151,56 +151,20 @@
               <div class="d-flex m-r-50">
                 <div class="avatar avatar-lg avatar-image">
                   <img
-                    src="assets/images/avatars/thumb-3.jpg"
+                    :src="user.picture"
                     alt=""
                   >
                 </div>
                 <div class="m-l-10">
                   <p class="m-b-0 text-dark font-weight-semibold">
-                    Marshall Nichols
+                    {{ user.name }}
                   </p>
                   <p class="m-b-0 opacity-07">
-                    UI/UX Desinger
+                    {{ user.role }}
                   </p>
                 </div>
               </div>
             </div>
-            <a
-              href="javascript:void(0);"
-              class="dropdown-item d-block p-h-15 p-v-10"
-            >
-              <div class="d-flex align-items-center justify-content-between">
-                <div>
-                  <i class="anticon opacity-04 font-size-16 anticon-user" />
-                  <span class="m-l-10">Edit Profile</span>
-                </div>
-                <i class="anticon font-size-10 anticon-right" />
-              </div>
-            </a>
-            <a
-              href="javascript:void(0);"
-              class="dropdown-item d-block p-h-15 p-v-10"
-            >
-              <div class="d-flex align-items-center justify-content-between">
-                <div>
-                  <i class="anticon opacity-04 font-size-16 anticon-lock" />
-                  <span class="m-l-10">Account Setting</span>
-                </div>
-                <i class="anticon font-size-10 anticon-right" />
-              </div>
-            </a>
-            <a
-              href="javascript:void(0);"
-              class="dropdown-item d-block p-h-15 p-v-10"
-            >
-              <div class="d-flex align-items-center justify-content-between">
-                <div>
-                  <i class="anticon opacity-04 font-size-16 anticon-project" />
-                  <span class="m-l-10">Projects</span>
-                </div>
-                <i class="anticon font-size-10 anticon-right" />
-              </div>
-            </a>
             <a
               href="javascript:void(0);"
               class="dropdown-item d-block p-h-15 p-v-10"
@@ -228,23 +192,33 @@ export default {
     return {
       alarmDropDown: false,
       profileDropDown: false,
+
+      user: {
+        name: "김범욱",
+        role: "Admin",
+        picture: require("@/assets/imgs/logo-fold.png"),
+      },
     }
   },
   computed: {
-    ...mapGetters('header', ['isFolded']),
-    ...mapGetters('header',['isExpand']),
+    // ...mapGetters('header', ['isFolded']),
+    // ...mapGetters('header',['isExpand']),
   },
   methods: {
+    // 네비게이션 접기 펼치기
     ...mapActions('header', ['setFolded']),
     ...mapActions('header', ['setExpanded']),
+    // 알람 눌렀을때 드롭다운
     setAlarmDropDown(){
       this.alarmDropDown = !this.alarmDropDown
       this.profileDropDown = false
     },
+    // 프로필 사진 눌렀을때 드롭다운
     setProfileDropDown(){
       this.alarmDropDown = false
       this.profileDropDown = !this.profileDropDown
     },
+    
   },
 }
 </script>

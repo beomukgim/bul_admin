@@ -30,6 +30,8 @@
 
 import HeaderArea from "@/components/common/HeaderArea"
 import NavArea from "@/components/common/NavArea"
+// import "@/assets/js/app.min.js"
+import "@/assets/js/vendors.min.js"
 import { mapGetters } from "vuex"
 
 export default {

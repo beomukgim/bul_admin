@@ -9,13 +9,17 @@ import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
 import "./assets/css/app.min.css"
 
+
+// import 'expose-loader?$!expose-loader?jQuery!jquery'
+
+
 Vue.config.productionTip = false
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
-
+// use jquery
 new Vue({
   router,
   store,
