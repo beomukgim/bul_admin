@@ -22,6 +22,7 @@
     "datatables.net": "^1.11.3",
     "datatables.net-dt": "^1.11.3",
     "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
     "popper.js": "^1.16.1-lts",
     "portal-vue": "^2.1.7",
     "vue": "^2.6.14",
