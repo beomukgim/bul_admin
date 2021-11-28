@@ -13,24 +13,28 @@
       >
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
+            <th 
+              v-for="(item, idx) in dealData.columnList"
+              :key="idx"
+            >
+              {{ item }}
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Tiger Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td>2011/04/25</td>
-            <td>$320,800</td>
+          <tr
+            v-for="(items, idx) in dealData.columnData"
+            :key="idx"
+            @click="redirect(items)"
+          >
+            <td
+              v-for="(item, idx_mini) in items"
+              :key="idx_mini"
+            >
+              {{ item }}
+            </td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td>Garrett Winters</td>
             <td>Accountant</td>
             <td>Tokyo</td>
@@ -1125,18 +1129,9 @@
             <td>27</td>
             <td>2011/01/25</td>
             <td>$112,000</td>
-          </tr>
+          </tr> -->
         </tbody>
-        <!-- <tfoot>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
-          </tr>
-        </tfoot> -->
+        <!-- tofoot 삭제 -->
       </table>
     </div>
   </div>
@@ -1149,7 +1144,18 @@ import $ from 'jquery'
 
 export default {
     props: {
-    
+      dealData: {
+        type: Object,
+        default: () => {
+          return { 
+            title: 'title',
+            columnList: [],
+            columnData: [
+              [],
+            ],
+          }
+        },
+      },
     },
     data(){
         return {
@@ -1165,11 +1171,19 @@ export default {
           lengthChange: false,
           info: false,
           ordering: false,
-
+        })
+        // $('#data-table tbody').on('click', 'tr',  function(event){
+        //   console.log(event)
+        //   // this.$router.push(route)
+        // })
+        $('#data-table tbody tr').hover(function(){
+          $(this).toggleClass( "active" )
         })
     },
     methods: {
-        
+        redirect(item){
+          this.$router.push({ name: 'wait-approve-club-deal-detail', params: { itemNo : item[0] } })
+        },
     },
 }
 </script>
