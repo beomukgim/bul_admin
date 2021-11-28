@@ -23,12 +23,8 @@
             <span class="icon-holder">
               <i :class="`anticon anticon-${item.icon}`" />
             </span>
-            <span v-if="item.contents.length === 0">
-              <router-link :to="{ name: item.route }">
-                <span class="title">{{ item.name }}</span>
-              </router-link>
-            </span>
-            <span v-else>
+            
+            <span>
               <span class="title">{{ item.name }}</span>
               <span class="arrow">
                 <i class="arrow-icon" />
@@ -43,9 +39,14 @@
               :key="idx_mini"
               :class="{ 'active' : item_mini.route === $route.name }"
             >
-              <router-link :to="{ name: item_mini.route }">
+              <!-- <router-link :to="{ name: item_mini.route }"> -->
+              <a
+                href="javascript:void(0);"
+                @click="redirect(item_mini.route)"
+              >
                 <span>{{ item_mini.name }}</span>
-              </router-link>
+              </a>
+              <!-- </router-link> -->
             </li>
           </ul>
         </li>
@@ -77,7 +78,7 @@ export default {
           toggle: false,
           contents: [
               {
-                route: "wait-approve-club-deal",
+                route: "wait-approve-club-deal-list",
                 icon: "none",
                 name: "승인 대기",
               },
@@ -227,6 +228,11 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    redirect(route){
+      this.$router.push({name: route})
+    },
   },
 }
 </script>

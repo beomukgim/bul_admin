@@ -1,1 +1,4 @@
 @import url("/assets/css/vendors/dataTables.bootstrap.min.css");
+#data-table tbody .active {
+    cursor: pointer;
+}

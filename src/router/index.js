@@ -25,14 +25,23 @@ const routes = [
     },
     component: () => import('@/views/pages-pc/main'),
   },
-  // 승인 대기 (클럽딜)
+  // 승인 대기 리스트(클럽딜)
   {
-    path: "/wait-approve-club-deal",
-    name: "wait-approve-club-deal",
+    path: "/wait-approve-club-deal-list",
+    name: "wait-approve-club-deal-list",
     meta: {
 
     },
-    component: () => import('@/views/pages-pc/clubdeal/wait-approve'),
+    component: () => import('@/views/pages-pc/clubdeal/wait-approve/list'),
+  },
+  // 승인 대기 상세(클럽딜)
+  {
+    path: "/wait-approve-club-deal-detail",
+    name: "wait-approve-club-deal-detail",
+    meta: {
+
+    },
+    component: () => import('@/views/pages-pc/clubdeal/wait-approve/detail'),
   },
   // 모집 중 (클럽딜)
   {
