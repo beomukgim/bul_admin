@@ -1,0 +1,59 @@
+{
+  "uuid": "14de1b73-897f-4f87-81b9-50ee4071a472",
+  "lastMigration": 18,
+  "name": "New environment",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "6c97d9b4-b022-4b93-b70f-9371725d9c25",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "clubdealdata",
+      "responses": [
+        {
+          "uuid": "86de8569-91ce-46c9-b878-f6c1c1527deb",
+          "body": "{\n  title: \"접수된 클럽딜\",\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "https": false,
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
