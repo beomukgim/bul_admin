@@ -21,11 +21,11 @@
         </div>
       </div>
       <div class="m-b-15 w-50 block-text-right">
-        <button class="btn btn-danger btn-tone m-r-15 w-35">
+        <button class="btn btn-danger btn-tone m-r-15 w-rem-9">
           <i class="anticon" />
           <span>거절 하기</span>
         </button>
-        <button class="btn btn-primary w-35">
+        <button class="btn btn-primary w-rem-9">
           <i class="anticon" />
           <span>서류 승인</span>
         </button>

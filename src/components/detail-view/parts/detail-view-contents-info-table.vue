@@ -1,13 +1,22 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <h4 class="card-title">
-        Basic Info
-      </h4>
+      <slot name="title">
+        <h4 class="card-title">
+          title
+        </h4>
+      </slot>
       <div class="table-responsive">
         <table class="product-info-table m-t-20">
           <tbody>
-            <tr>
+            <slot name="contents">
+              <tr>
+                <td>d</td>
+                <td>d</td>
+              </tr>
+            </slot>
+            
+            <!-- <tr>
               <td>Price:</td>
               <td class="text-dark font-weight-semibold">
                 $199.00
@@ -30,7 +39,7 @@
               <td>
                 <span class="badge badge-pill badge-cyan">In Stock</span>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table> 
       </div>

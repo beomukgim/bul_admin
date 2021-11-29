@@ -54,4 +54,14 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.badge-grey {
+  color: grey !important;
+  background: #f1f2f3;
+  border-color: transparent;
+  font-weight: 500;
+}
+.font-grey {
+  color: grey !important;
+}
+</style>

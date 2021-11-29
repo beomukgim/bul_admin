@@ -31,7 +31,15 @@
               v-for="(item, idx_mini) in items"
               :key="idx_mini"
             >
-              {{ item }}
+              <span
+                v-if="idx_mini == 0"
+                :class="{'badge badge-pill badge-grey font-size-12' : true}"
+              >
+                <span class="font-weight-semibold m-l-5">{{ item }}</span>
+              </span>
+              <span v-else>
+                <span>{{ item }}</span>
+              </span>
             </td>
           </tr>
           <!-- <tr>

@@ -1,12 +1,16 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <h4 class="card-title">
-        Card Header
-      </h4>
+      <slot name="title">
+        <h4 class="card-title">
+          title
+        </h4>
+      </slot>
     </div>
     <div class="card-body">
-      <div>hello</div>
+      <slot name="contents">
+        <div>contents</div>
+      </slot>
     </div>
   </div>
 </template>
