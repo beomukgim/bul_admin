@@ -21,39 +21,38 @@
         </div>
       </div>
       <div class="m-b-15 w-50 block-text-right">
-        <button class="btn btn-danger btn-tone m-r-15 w-rem-9">
+        <button
+          class="btn btn-danger btn-tone m-r-15 w-rem-9"
+          data-toggle="modal"
+          data-target="#rejectModal"
+        >
           <i class="anticon" />
           <span>거절 하기</span>
         </button>
-        <button class="btn btn-primary w-rem-9">
+        <DetailViewModal />
+        <button
+          class="btn btn-primary w-rem-9"
+          data-toggle="modal"
+          data-target="#approveModal"
+        >
           <i class="anticon" />
           <span>서류 승인</span>
         </button>
+        <!-- modal -->
+        
+        <!-- modal -->
       </div>
     </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          data-toggle="tab"
-          href="#product-edit-basic"
-        >클럽딜 정보</a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          data-toggle="tab"
-          href="#product-edit-option"
-        >첨부 서류</a>
-      </li>
-    </ul>
   </div>
 </template>
 
 
 <script>
+import DetailViewModal from "@/components/detail-view/parts/detail-view-modal"
+
 export default {
     components: {
+      DetailViewModal,
     },
     data(){
         return {

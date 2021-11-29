@@ -1,7 +1,8 @@
 <template>
-  <form>
+  <div>
     <DetailViewHeader />
     <div class="tab-content m-t-15">
+      <DetailViewTab />
       <div
         id="product-edit-basic"
         class="tab-pane fade show active"
@@ -48,18 +49,20 @@
         </div>
       </div>
     </div>
-  </form>
+  </div>
 </template>
 <script>
 import DetailViewHeader from "@/components/detail-view/parts/detail-view-header"
 import DetailViewContentsInfoCard from "@/components/detail-view/parts/detail-view-contents-info-card"
 import DetailViewContentsInfoTable from "@/components/detail-view/parts/detail-view-contents-info-table"
+import DetailViewTab from "@/components/detail-view/parts/detail-view-tab"
 
 export default {
     components: {
       DetailViewHeader,
       DetailViewContentsInfoCard,
       DetailViewContentsInfoTable,
+      DetailViewTab,
     },
     data(){
         return {
