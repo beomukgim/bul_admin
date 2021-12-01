@@ -4,7 +4,7 @@
     <div class="tab-content m-t-15">
       <DetailViewTab :tabs="items" />
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-xxxl-9 col-xxl-8">
           <div
             id="basic"
             class="tab-pane fade show active"
@@ -316,7 +316,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-xxxl-3 col-xxl-4">
           <div class="card">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">

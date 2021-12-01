@@ -8,6 +8,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue"
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
 import "./assets/css/app.min.css"
+import "./style.css"
 
 import objectMapper from "@/utils/mapper"
 import fileManager from "@/utils/file-manager"
