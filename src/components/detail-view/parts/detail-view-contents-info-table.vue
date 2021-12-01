@@ -11,35 +11,10 @@
           <tbody>
             <slot name="contents">
               <tr>
-                <td>d</td>
-                <td>d</td>
+                <td>contents</td>
+                <td>contents</td>
               </tr>
             </slot>
-            
-            <!-- <tr>
-              <td>Price:</td>
-              <td class="text-dark font-weight-semibold">
-                $199.00
-              </td>
-            </tr>
-            <tr>
-              <td>Category:</td>
-              <td>	Cloths</td>
-            </tr>
-            <tr>
-              <td>Brand:</td>
-              <td>H&M</td>
-            </tr>
-            <tr>
-              <td>Tax Rate:</td>
-              <td>10%</td>
-            </tr>
-            <tr>
-              <td>Status:</td>
-              <td>
-                <span class="badge badge-pill badge-cyan">In Stock</span>
-              </td>
-            </tr> -->
           </tbody>
         </table> 
       </div>

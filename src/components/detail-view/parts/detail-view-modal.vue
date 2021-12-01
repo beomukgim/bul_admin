@@ -75,7 +75,6 @@ export default {
     },
     mounted(){
         new Quill('#editor', {
-            // scrollingContainer: '.scroll-container',
             theme: 'snow',
         })
     },

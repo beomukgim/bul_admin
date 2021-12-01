@@ -22,3 +22,29 @@
 #editor {
     height: 400px;
 }
+.tab-content .tab-pane {
+    display: none;
+}
+.tab-content .tab-pane.active {
+    display: block;
+}
+.file-manager-wrapper .file-manager-content {
+    width: 100%;
+    float: none;
+
+}
+.file-manager-wrapper .file-manager-content .file-manager-content-body {
+    height: 100vh;
+}
+.rounded-left-3 {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+.rounded-right-3 {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+}
+.table-hover tbody tr:hover {
+    color: #4064ED;
+    background-color: #4064ED05;
+}

@@ -1,18 +1,16 @@
 <template>
   <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a
-        class="nav-link active"
-        data-toggle="tab"
-        href="#product-edit-basic"
-      >클럽딜 정보</a>
-    </li>
-    <li class="nav-item">
+    <li
+      v-for="(value, key) in tabs"
+      :key="key"
+      class="nav-item"
+    >
       <a
         class="nav-link"
+        :class="{'active' : key === 'basic'}"
         data-toggle="tab"
-        href="#product-edit-option"
-      >첨부 서류</a>
+        :href="`#${key}`"
+      >{{ $objectMapper(key) }}</a>
     </li>
   </ul>
 </template>
@@ -20,12 +18,13 @@
 
 <script>
 export default {
-    components: {
-
+    components: {},
+    props: {
+      tabs: Object(),
     },
     data(){
         return {
-            
+
         }
     },
     computed: {

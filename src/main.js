@@ -9,8 +9,9 @@ import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
 import "./assets/css/app.min.css"
 
+import objectMapper from "@/utils/mapper"
+import fileManager from "@/utils/file-manager"
 
-// import 'expose-loader?$!expose-loader?jQuery!jquery'
 
 
 Vue.config.productionTip = false
@@ -19,7 +20,8 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
-// use jquery
+Vue.use(objectMapper)
+Vue.use(fileManager)
 new Vue({
   router,
   store,

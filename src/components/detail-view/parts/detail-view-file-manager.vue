@@ -1,13 +1,14 @@
 <template>
-  <DetailView />
+  <div />
 </template>
 
+
 <script>
-import DetailView from "@/components/detail-view/club-deal-wait-approve-detail"
+import $ from 'jquery'
 
 export default {
-    components: {
-      DetailView,
+    components: {},
+    props: {
     },
     data(){
         return {
@@ -18,10 +19,16 @@ export default {
 
     },
     mounted(){
-      
+        
+    },
+    destroyed(){
+        
     },
     methods: {
         
+
+    
     },
 }
 </script>
+<style scoped src="./style.css"></style>
