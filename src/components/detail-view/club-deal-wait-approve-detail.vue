@@ -19,6 +19,7 @@
                 <div>너무 좋은 회사</div>
               </template>
             </DetailViewContentsInfoCard>
+
             <DetailViewContentsInfoTable>
               <template v-slot:title>
                 <h4 class="card-title">
@@ -44,324 +45,11 @@
             id="file"
             class="tab-pane fade"
           >
-            <div class="file-manager-wrapper">
-              <div class="file-manager-content">
-                <div class="file-manager-content-body">
-                  <div class="file-manager-content-files">
-                    <div class="unselect-bg" />
-                    <div class="file-wrapper m-t-20">
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-pdf text-danger" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            App Flow.pdf
-                          </h6>
-                          <span class="font-size-13 text-muted">19.8MB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-word text-primary" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Documentation.doc
-                          </h6>
-                          <span class="font-size-13 text-muted">1.2MB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-excel text-success" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Expensess.xls
-                          </h6>
-                          <span class="font-size-13 text-muted">518KB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-ppt text-secondary" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Presentation.ppt
-                          </h6>
-                          <span class="font-size-13 text-muted">308KB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-word text-primary" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Guideline.doc
-                          </h6>
-                          <span class="font-size-13 text-muted">1.2MB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-excel text-success" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Annual_Report.xls
-                          </h6>
-                          <span class="font-size-13 text-muted">518KB</span>
-                        </div>
-                      </div>
-                      <div class="file vertical">
-                        <div class="font-size-40">
-                          <i class="anticon anticon-file-word text-primary" />
-                        </div>
-                        <div class="m-t-10">
-                          <h6 class="mb-0">
-                            Design_brief.doc
-                          </h6>
-                          <span class="font-size-13 text-muted">168KB</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="file-manager-content-details">
-                    <div class="content-details d-none">
-                      <div class="p-h-25 p-v-15 d-flex justify-content-between align-items-center border-bottom">
-                        <h5 class="m-b-0">
-                          App Flow.pdf
-                        </h5>
-                        <div class="content-details-close">
-                          <a
-                            class="text-dark"
-                            href="javascript:void(0);"
-                          >
-                            <i class="anticon anticon-right-circle" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="m-b-10">
-                        <div class="d-flex justify-content-around display-3 align-items-center content-details-file">
-                          <i class="anticon anticon-file-pdf text-danger" />
-                        </div>
-                      </div>
-                      <ul
-                        id="myTab"
-                        class="nav nav-tabs nav-justified"
-                        role="tablist"
-                      >
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active"
-                            data-toggle="tab"
-                            href="#tab-details"
-                          >Details</a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            data-toggle="tab"
-                            href="#tab-activity"
-                          >Activity</a>
-                        </li>
-                      </ul>
-                      <div
-                        id="myTabContent"
-                        class="tab-content m-t-15"
-                      >
-                        <div
-                          id="tab-details"
-                          class="tab-pane fade show active"
-                        >
-                          <div class="p-h-25 p-v-15">
-                            <dl class="row m-b-10">
-                              <dt class="col-5 text-dark">
-                                Type:
-                              </dt>
-                              <dd class="col-7">
-                                pdf
-                              </dd>
-                            </dl>   
-                            <dl class="row m-b-10">
-                              <dt class="col-5 text-dark">
-                                Size:
-                              </dt>
-                              <dd class="col-7">
-                                19.8MB
-                              </dd>
-                            </dl>   
-                            <dl class="row m-b-10">
-                              <dt class="col-5 text-dark">
-                                Modified:
-                              </dt>
-                              <dd class="col-7">
-                                Feb 17, 2019
-                              </dd>
-                            </dl>   
-                            <dl class="row m-b-10">
-                              <dt class="col-5 text-dark">
-                                Created:
-                              </dt>
-                              <dd class="col-7">
-                                Feb 17, 2019
-                              </dd>
-                            </dl> 
-                            <dl class="row m-b-10">
-                              <dt class="col-5 text-dark">
-                                Author:
-                              </dt>
-                              <dd class="col-7">
-                                Erin Gonzales
-                              </dd>
-                            </dl>    
-                          </div>
-                          <div class="border-top border-bottom p-h-25 p-v-10 d-flex align-items-center">
-                            <span class="text-dark font-weight-semibold m-r-10">Add Description</span> 
-                            <button class="m-r-5 btn btn-icon btn-hover btn-rounded btn-sm">
-                              <i class="anticon anticon-edit" />
-                            </button>
-                          </div> 
-                        </div>
-                        <div
-                          id="tab-activity"
-                          class="tab-pane fade"
-                          role="tabpanel"
-                        >
-                          <div class="p-h-20 p-v-15">
-                            <div class="m-b-25">
-                              <div class="p-b-10 border-bottom">
-                                <div class="d-flex align-items-center">
-                                  <div class="avatar avatar-image m-r-10">
-                                    <img
-                                      src="assets/images/avatars/thumb-1.jpg"
-                                      alt=""
-                                    >
-                                  </div>
-                                  <div class="text-gray">
-                                    <span class="text-dark font-weight-semibold">Erin Gonzales </span>
-                                    <span>added </span>
-                                    <span>2 files</span>
-                                    <div class="text-muted font-size-13">
-                                      7:57PM
-                                    </div>
-                                  </div>
-                                </div>
-                                <ul class="list-unstyled m-l-50 m-t-15">
-                                  <li class="m-b-15">
-                                    <div class="avatar avatar-icon avatar-red avatar-sm">
-                                      <i class="anticon anticon-file-pdf" />
-                                    </div>
-                                    <span class="text-gray">Guide Line.pdf</span>
-                                  </li>
-                                  <li class="m-b-15">
-                                    <div class="avatar avatar-icon avatar-blue avatar-sm">
-                                      <i class="anticon anticon-file-word" />
-                                    </div>
-                                    <span class="text-gray">Business Plan.doc</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="m-b-25">
-                              <div class="p-b-10 border-bottom">
-                                <div class="d-flex align-items-center">
-                                  <div class="avatar avatar-image m-r-10">
-                                    <img
-                                      src="assets/images/avatars/thumb-1.jpg"
-                                      alt=""
-                                    >
-                                  </div>
-                                  <div class="text-gray">
-                                    <span class="text-dark font-weight-semibold">Erin Gonzales </span>
-                                    <span>added </span>
-                                    <span>1 files</span>
-                                    <div class="text-muted font-size-13">
-                                      7:57PM
-                                    </div>
-                                  </div>
-                                </div>
-                                <ul class="list-unstyled m-l-50 m-t-15">
-                                  <li class="m-b-15">
-                                    <div class="avatar avatar-icon avatar-cyan avatar-sm">
-                                      <i class="anticon anticon-file-excel" />
-                                    </div>
-                                    <span class="text-gray">Expenses.xls</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="content-details-no-data">
-                      <div class="text-center">
-                        <img
-                          class="img-fluid opacity-04"
-                          src="assets/images/others/file-manager.png"
-                          alt=""
-                        >
-                        <p class="text-muted m-t-20">
-                          Select folder or file to view details
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <DetailViewFileManager />  
           </div>
         </div>
         <div class="col-xxxl-3 col-xxl-4">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5>변경 이력</h5>
-                <div />
-              </div>
-              <div class="m-t-30">
-                <div class="table-responsive detail-nav">
-                  <table class="table table-hover">
-                    <tbody>
-                      <tr>
-                        <td
-                          class="py-4 rounded-left-3"
-                        >
-                          서류 접수
-                        </td>
-                        <td>2021.10.01 11:30:59</td>
-                        <td
-                          class="pr-0 rounded-right-3"
-                        />
-                      </tr>
-                      <tr>
-                        <td
-                          class="py-4 rounded-left-3"
-                        >
-                          서류 접수
-                        </td>
-                        <td>2021.10.01 11:30:59</td>
-                        <td
-                          class="pr-0 rounded-right-3"
-                        >
-                          <span class="badge badge-pill badge-cyan font-size-12">
-                                                    
-                            <span
-                              class="font-weight-semibold m-l-5 ml-0"
-                            >현재 상태</span>
-                          </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
+          <DetailViewContentsNav />
         </div>
       </div>
     </div>
@@ -372,6 +60,8 @@ import DetailViewHeader from "@/components/detail-view/parts/detail-view-header"
 import DetailViewContentsInfoCard from "@/components/detail-view/parts/detail-view-contents-info-card"
 import DetailViewContentsInfoTable from "@/components/detail-view/parts/detail-view-contents-info-table"
 import DetailViewTab from "@/components/detail-view/parts/detail-view-tab"
+import DetailViewFileManager from "@/components/detail-view/parts/detail-view-file-manager"
+import DetailViewContentsNav from "@/components/detail-view/parts/detail-view-contents-nav"
 
 export default {
     components: {
@@ -379,6 +69,8 @@ export default {
       DetailViewContentsInfoCard,
       DetailViewContentsInfoTable,
       DetailViewTab,
+      DetailViewFileManager,
+      DetailViewContentsNav,
     },
     data(){
         return {
@@ -441,7 +133,6 @@ export default {
     },
     mounted(){
       this.$fileManagerOn()
-      console.log(this.$route.params.clubdealId)
     },
     destroyed(){
       this.$fileManagerOff()
