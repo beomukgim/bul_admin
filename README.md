@@ -1,4 +1,4 @@
-# bullida_web_front_admin_
+# bullida_web_front_admin
 
 ## Project setup
 ```
