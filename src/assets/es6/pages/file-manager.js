@@ -1,19 +1,19 @@
-class FileManager {
+class FileManager{
 
-    static init() {
+    static init(){
 
         const hide = 'd-none'
-        const fileItems = '.file-manager-content-files .file';
-        const fileDetail = '.file-manager-content-details .content-details';
+        const fileItems = '.file-manager-content-files .file'
+        const fileDetail = '.file-manager-content-details .content-details'
         const fileContentDetails = '.file-manager-content-details'
-        const fileDetailNoData = '.file-manager-content-details .content-details-no-data';
+        const fileDetailNoData = '.file-manager-content-details .content-details-no-data'
 
-        function showFileDetails () {
+        function showFileDetails(){
             $(fileDetailNoData).addClass(hide)
             $(fileDetail).removeClass(hide)
         }
 
-        function hideFileDetails () {
+        function hideFileDetails(){
             $(fileDetailNoData).removeClass(hide)
             $(fileDetail).addClass(hide)
         }
@@ -48,5 +48,5 @@ class FileManager {
     }
 }
 
-$(() => { FileManager.init(); });
+$(() => { FileManager.init() })
 

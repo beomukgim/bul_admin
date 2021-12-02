@@ -32,6 +32,7 @@ import HeaderArea from "@/components/common/HeaderArea"
 import NavArea from "@/components/common/NavArea"
 // import "@/assets/js/app.min.js"
 import "@/assets/js/vendors.min.js"
+
 import { mapGetters } from "vuex"
 
 export default {
@@ -49,9 +50,21 @@ export default {
   },
   created(){},
   beforeCreate(){},
-  mounted(){},
+  mounted(){
+    console.log(process.env.VUE_APP_TEST)
+  },
   methods: {},
 }
 </script>
 
-<style></style>
+<style>
+.badge-grey {
+  color: grey !important;
+  background: #f1f2f3;
+  border-color: transparent;
+  font-weight: 500;
+}
+.font-grey {
+  color: grey !important;
+}
+</style>
