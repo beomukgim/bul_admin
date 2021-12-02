@@ -50,7 +50,9 @@ export default {
   },
   created(){},
   beforeCreate(){},
-  mounted(){},
+  mounted(){
+    console.log(process.env.VUE_APP_TEST)
+  },
   methods: {},
 }
 </script>
