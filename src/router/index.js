@@ -27,8 +27,8 @@ const routes = [
   },
   // 승인 대기 리스트(클럽딜)
   {
-    path: "/wait-approve-club-deal-list",
-    name: "wait-approve-club-deal-list",
+    path: "/waitapprove/clubdeals",
+    name: "waitapprove/clubdeals",
     meta: {
 
     },
@@ -36,8 +36,8 @@ const routes = [
   },
   // 승인 대기 상세(클럽딜)
   {
-    path: "/wait-approve-club-deal-detail",
-    name: "wait-approve-club-deal-detail",
+    path: "/waitapprove/clubdeals/detail/:clubdealId",
+    name: "waitapprove/clubdeals/detail",
     meta: {
 
     },
@@ -225,6 +225,13 @@ const routes = [
   },
 
 ]
+
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location){
+	return originalPush.call(this, location).catch(err => {
+		if (err.name !== 'NavigationDuplicated') throw err
+	})
+}
 
 const router = new VueRouter({
   mode: "history",

@@ -1190,7 +1190,7 @@ export default {
     },
     methods: {
         redirect(item){
-          this.$router.push({ name: 'wait-approve-club-deal-detail', params: { itemNo : item[0] } })
+          this.$router.push({ path: `clubdeals/detail/${item[1]}` })
         },
     },
 }

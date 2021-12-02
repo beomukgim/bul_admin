@@ -324,7 +324,7 @@
                 <div />
               </div>
               <div class="m-t-30">
-                <div class="table-responsive">
+                <div class="table-responsive detail-nav">
                   <table class="table table-hover">
                     <tbody>
                       <tr>
@@ -441,6 +441,7 @@ export default {
     },
     mounted(){
       this.$fileManagerOn()
+      console.log(this.$route.params.clubdealId)
     },
     destroyed(){
       this.$fileManagerOff()

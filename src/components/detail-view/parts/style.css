@@ -48,3 +48,7 @@
     color: #4064ED;
     background-color: #4064ED05;
 }
+.detail-nav .table>tbody>tr>td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
