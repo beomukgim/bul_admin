@@ -35,7 +35,7 @@ export default {
                     title: "서류 접수",
                     value: "5개",
                     icon: "file-text",
-                    color: "grey",
+                    color: "grey font-grey",
                 },
                 {
                     title: "세부 검토",

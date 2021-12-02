@@ -78,7 +78,7 @@ export default {
           toggle: false,
           contents: [
               {
-                route: "wait-approve-club-deal-list",
+                route: "waitapprove/clubdeals",
                 icon: "none",
                 name: "승인 대기",
               },
